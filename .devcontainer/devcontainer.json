@@ -2,12 +2,22 @@
   "name": "ros1noeticdevcontainer",
   "dockerFile": "Dockerfile",
   "runArgs": [
-    "--privileged",
-    "--network=host"
+    "--privileged"
+    //"--network=host"
   ],
   "features": {
-    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+    "ghcr.io/devcontainers/features/desktop-lite:1": {}
   },
   "workspaceMount": "source=${localWorkspaceFolder},target=/${localWorkspaceFolderBasename},type=bind",
-  "workspaceFolder": "/${localWorkspaceFolderBasename}"
+  "workspaceFolder": "/${localWorkspaceFolderBasename}",
+  "forwardPorts": [6080, 5901],
+  "portsAttributes": {
+    "6080": {
+      "label": "Desktop (Web)"
+    },
+    "5901": {
+      "label": "Desktop (VNC)"
+    }
+  }
 }
