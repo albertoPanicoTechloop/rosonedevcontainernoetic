@@ -11,6 +11,7 @@ All the moves of the turtle are available on http://localhost:6080
 
 
 ---------------------------------
+# vinya_st4030_gui package
 
 Now we need to import the vinya_st4030_gui into src folder as a package (you need only to drag and drop, the creation of the package will be done after the catkin_make command). \
 Create a robot package with `catkin_create_pkg robot` command, into this package create a folder named "msg" and in this folder the file "canread.msg" with "string msg" as text. \
@@ -59,16 +60,16 @@ After this, we need to adjust the cmake files:
  ```
            <build_depend>message_generation</build_depend>  //Add the following lines only to robot/package.xml\
            <exec_depend>message_runtime</exec_depend>      //Add the following lines only to robot/package.xml\
-            <buildtool_depend>catkin</buildtool_depend>\
-            <build_depend>roscpp</build_depend>\
-            <build_depend>rospy</build_depend>\
-            <build_depend>std_msgs</build_depend>\
-            <build_export_depend>roscpp</build_export_depend>\
-            <build_export_depend>rospy</build_export_depend>\
-            <build_export_depend>std_msgs</build_export_depend>\
-            <exec_depend>roscpp</exec_depend>\
-            <exec_depend>rospy</exec_depend>\
-            <exec_depend>std_msgs</exec_depend>\
+            <buildtool_depend>catkin</buildtool_depend>
+            <build_depend>roscpp</build_depend>
+            <build_depend>rospy</build_depend>
+            <build_depend>std_msgs</build_depend>
+            <build_export_depend>roscpp</build_export_depend>
+            <build_export_depend>rospy</build_export_depend>
+            <build_export_depend>std_msgs</build_export_depend>
+            <exec_depend>roscpp</exec_depend>
+            <exec_depend>rospy</exec_depend>
+            <exec_depend>std_msgs</exec_depend>
 ```
 
 now type: 
