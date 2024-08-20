@@ -79,7 +79,7 @@ open a terminal and type `roscore`\
 open a new terminal, type `cd /rosonedevcontainernoetic/catkin_ws/src/vinya_st4030_gui/scripts`\
 `pip install -r requirements.txt` (maybe pip is not installed, type: `sudo apt update` and ` sudo apt install python3-venv python3-pip`)\
 now again `cd /rosonedevcontainernoetic/catkin_ws` and `source devel/setup.bash`\
-final command: `rosrun vinya_st4030_gui app.py` (if not, open manually a port 5000 on "ports tab in vscode and the go in localhost:5000").\
+final command: `rosrun vinya_st4030_gui app.py` (if not, open manually a port 5000 on "ports tab" in vscode and then go in localhost:5000").
 
 
 
