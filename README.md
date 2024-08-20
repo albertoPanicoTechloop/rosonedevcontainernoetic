@@ -1,7 +1,7 @@
 
 # ROS 
 
-A Robot Operating System (ROS) Version 1 Noetic DevContainer
+A Robot Operating System (ROS) Version 1 Noetic DevContainer (very useful links at  [ROS Tutorials](https://wiki.ros.org/ROS/Tutorials))
 
 *  Open a terminal and type `roscore`
 *  Open a second terminal and type `rosrun turtlesim turtlesim_node`
